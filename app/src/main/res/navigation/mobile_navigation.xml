@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_gallery">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.beteiserichmond.richmond.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.beteiserichmond.richmond.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.beteiserichmond.richmond.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.beteiserichmond.richmond.BlankFragment"
+        android:label="Videos"
+        tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/matrix"
+        android:name="com.beteiserichmond.richmond.matrix"
+        android:label="matrix"
+        tools:layout="@layout/fragment_matrix" />
+    <fragment
+        android:id="@+id/help"
+        android:name="com.beteiserichmond.richmond.help"
+        android:label="help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/mobilemoney"
+        android:name="com.beteiserichmond.richmond.help"
+        android:label="MobileMoney"
+        tools:layout="@layout/mobilemoney"
+        />
+</navigation>
